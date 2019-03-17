@@ -18,4 +18,10 @@ class Api::EmployeesController < ApplicationController
 
     render "show.json.jbuilder"
   end
+
+  def show
+    @employee = Employee.find_by(id: params[:id])
+
+    render "show.json.jbuilder"
+  end
 end

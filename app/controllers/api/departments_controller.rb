@@ -15,4 +15,5 @@ class Api::DepartmentsController < ApplicationController
 
     render "show.json.jbuilder"
   end
+
 end
